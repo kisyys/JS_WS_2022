@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Workshop 1 solutions</title>
+		<!-- script tag is where Javascript goes to -->
+		<script>
+			//1
+			alert("Hello world!"); // Press Shift+Enter here
+			alert("Another hello world"); // Press Shift+Enter here
+			alert("Still one more hello world"); // Enter here
+
+			//2
+			var firstname = "John";
+			var lastname = "Johnson";
+			alert(firstname);
+			document.write(lastname);
+			alert(firstname+" "+lastname);
+			console.log(lastname+", "+firstname);
+
+			//3
+			var x = 26;
+			var order = 'Beer';
+			if (x > 50) {
+			document.write("<h2>He’s over 50</h2>");
+			} else if (x <= 50 && x > 30){
+			document.write("Middle aged man, who ordered some "+order);
+			} else if (x <= 30 && x > 25){
+			document.write("Youngster "+order);
+			console.log("Youngster "+order)
+			} else
+			document.write("It seems you're bit underaged.");
+
+			//4
+			var arr = [];
+			for (var i=0; i<15; i++) {
+				let r = Math.floor(Math.random() * 100) + 1
+				console.log(r);
+				document.write('<b>'+r+'</b><br></br>');
+				arr.push(r);	
+			}
+			console.log(arr);
+
+			//5
+			function areYouOldEnough(age) {
+				if (age < 18){
+					console.log("Under 18");
+					//return false;
+				}else
+					//console.log(true);
+					//return true;
+					alert("Over 18");
+			}
+
+
+			areYouOldEnough(16)
+			areYouOldEnough(19)
+
+			//6
+			var person1 = {
+				firstName:"John1",
+				lastName:"Doe1",
+				age:50,
+				eyeColor:"blue",
+				address: "Espoo",
+				phone: 118
+			};
+			var person2 = {
+				firstName:"John2",
+				lastName:"Doe2",
+				age:50,
+				eyeColor:"blue",
+				address: "Espoo",
+				phone: 118
+			};
+
+			var person3 = {
+				firstName:"John3",
+				lastName:"Doe3",
+				age:50,
+				eyeColor:"blue",
+				address: "Espoo",
+				phone: 118
+			};
+
+			var person4 = {
+				firstName:"John4",
+				lastName:"Doe4",
+				age:50,
+				eyeColor:"blue",
+				address: "Espoo",
+				phone: 118
+			};
+
+			const list = [person1,person2,person3,person4];
+
+			for(let i = 0;i<list.length;i++) {
+				console.log(list[i].firstName + ' ' + list[i].lastName);
+			}
+
+			console.log(person1.age);
+
+			const printInfo = function() {
+				console.log(person1);
+			}
+
+			printInfo();
+			
+			//Independent Exercises 1
+			
+			//1
+			const dogAge = (manAge) => {console.log((manAge*7))};
+			dogAge(2);
+
+			//2
+			var i = 5; var j = 10;
+			var k = 25; var l = "Joe";
+			if (i < j) {
+				console.log("i");
+			}
+			else if (j > k) { 
+				console.log("k");
+			}
+			else { 
+				console.log("j");
+				}
+			var arr = [3, 5, 7];
+			for (var i = 0; i <=3; i++){
+				console.log(arr[i]);
+			}
+
+		</script>
+	</head>
+	<body>
+
+	</body>
+
+</html>
