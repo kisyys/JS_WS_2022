@@ -9,15 +9,15 @@ function calculate() {
     'use strict';
 
     // For storing the order total:
-    var total;
+    var total = 0;
 
     // Get references to the form values:
-    var quantity = document.getElementById('quantity').value ; // add value
+    var quantity = parseInt(document.getElementById('quantity').value) ; // add value
 
-    var price =  document.getElementById('price').value ;
-    var tax =  document.getElementById('tax').value ; // add value
-    var discount =  document.getElementById('discount').value ; //add value
-	var shipping = document.getElementById('shipping').value; // add shipping
+    var price =  parseFloat(document.getElementById('price').value) ;
+    var tax =  parseFloat(document.getElementById('tax').value) ; // add value
+    var discount =  parseFloat(document.getElementById('discount').value) ; //add value
+	var shipping = parseFloat(document.getElementById('shipping').value); // add shipping
 
     // Add validation here later!
 
